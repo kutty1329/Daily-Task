@@ -1,0 +1,88 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+.Container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 5px 5%;
+}
+.Container.main-video{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 10px;
+}
+.Container.main-video video{
+    width: 100%;
+    border-radius: 5px;
+}
+.Container.main-video title{
+    color: black;
+    font-size: 23px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.Container.vide-list{
+    background-color: beige;
+    border-radius: 5px;
+    height: 520px;
+    overflow-y: scroll;
+}
+.Container.vide-list::-webkit-scrollbar{
+    width: 7px;
+}
+.Container.vide-list::-webkit-scrollbar-track{
+    background-color: beige;
+    border-radius: 50px;
+}
+.Container.vide-list::-webkit-scrollbar-thumb{
+    background-color: beige;
+    border-radius: 50px;
+}
+.Container.vide-list.play-list video{
+
+    width: 100px;
+    border-radius: 5px;
+
+}
+.Container.vide-list.play-list{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin: 10px;
+    padding:5px;
+    border: 1px solid rgb(red, green, blue);
+    cursor: pointer;
+}
+.Container.vide-list.play-list :hover{
+    background-color: bisque;
+}
+.Container.vide-list.play-list.active{
+    background-color: aqua;
+}
+@media(max-width:991px){
+    .Container{
+        
+        grid-template-columns: 1.5fr 1fr;  
+        padding: 10px;     
+    }
+}
+@media(max-width:991px){
+    .Container{
+       
+        grid-template-columns:  1fr;       
+    }
+}
+body{
+    background-color: rgb(15, 14, 14);
+}
+h3{
+    color: blueviolet;
+}
